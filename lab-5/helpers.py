@@ -24,8 +24,6 @@ def create_model_simpler(
     units,
     period=15,
 ):
-    print(SEED)
-
     set_random_seed(SEED)
     model = Sequential()
     model.add(LSTM(units=units, return_sequences=True, input_shape=(period, 1)))
